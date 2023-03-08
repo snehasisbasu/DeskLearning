@@ -1,0 +1,610 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{% static 'CSS/style.css' %}" />
+</head>
+
+<body>
+  {% comment %} <img src="{% static 'Image/Home/e-learning.jpg' %}"> {% endcomment %}
+  <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <button class="btn btn-outline-success mx-1" type="submit"><a href="register/"
+              style="text-decoration: none; color: inherit;">Register</a></button>
+
+
+          <button class="btn btn-outline-success" type="submit"><a href="login/"
+              style="text-decoration: none; color: inherit;">Login</a></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--Home-->
+
+  <section id="home">
+    <div class="container">
+      <h5>India's Largest</h5>
+      <h1><span>Learning Platform</span></h1>
+      <p>We offer the best products for the most affordable prices</p>
+      <button>Start Learning</button>
+    </div>
+  </section>
+
+  <!--Brand-->
+  <section id="brand" class="container text-center my-5">
+    <h3>Our Partners</h3>
+    <hr class="mx-auto" />
+    <p>
+      Collaboration is a key part of the success of any organization, executed
+      through a clearly defined vision and mission and based on transparency
+      and constant communication. We believe in a great partnership and our
+      partners are a great asset to us.
+    </p>
+
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" data-bs-interval="10000">
+          <p>The Cambridge University</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Camberwell_High_School.jpg/1280px-Camberwell_High_School.jpg"
+            class="d-block w-50" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+
+          </div>
+
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <p>The Londol School of Economics</p>
+          <img src="https://www.austinisd.org/sites/default/files/schools/campus-images/Eastide-Exterior-IMG_9458_0.jpg"
+            class="d-block w-50" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <p>The Texas University</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Hibbing_High_School_2014.jpg/1920px-Hibbing_High_School_2014.jpg"
+            class="d-block w-50" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+
+
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!--New
+    <section id="new" class="w-100">
+      <div class="row p-0 m-0">
+        <!--One
+        <div class="one col-lg-4 col-md-12 col-sm-12 p-0">
+          <img
+            src="https://static.mycc.in/static_asserts/assets/pocket_study_assets/images/study_player_ss92.png"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="">
+            <h2>Daily Live Class</h2>
+          </div>
+        </div>
+        <!--Two
+        <div class="one col-lg-4 col-md-12 col-sm-12 p-0">
+          <img
+            src="https://www.oliveboard.in/blog/wp-content/uploads/2020/12/Mentorship_pushimage.png"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="">
+            <h2>Practice</h2>
+            <button class="text-uppercase">Shop Now</button>
+          </div>
+        </div>
+        <!--Three
+        <div class="one col-lg-4 col-md-12 col-sm-12 p-0">
+          <img src="assets/imgs/3.jpg" class="img-fluid" alt="" />
+          <div class="details">
+            <h2>50% OFF Watches</h2>
+            <button class="text-uppercase">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </section>-->
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <img src="https://static.mycc.in/static_asserts/assets/pocket_study_assets/images/study_player_ss92.png"
+          class="img-fluid" alt="" />
+
+        <h2>Live Class</h2>
+
+      </div>
+      <div class="col">
+        <img src="https://www.oliveboard.in/blog/wp-content/uploads/2020/12/Mentorship_pushimage.png" class="img-fluid"
+          alt="" />
+
+        <h2>Practice</h2>
+
+
+      </div>
+
+    </div>
+    <div class="col">
+      <img
+        src="https://www.gettingsmart.com/wp-content/uploads/2018/11/bigstock-Group-Of-University-Students-A-230655628.jpg"
+        alt="">
+      <h2>Learn anytime, anywhere</h2>
+    </div>
+  </div>
+  </div>
+
+  <!--Featured
+    <section id="featured" class="my-5 pb-5">
+      <div class="container text-center">
+        <h3>Our Featured</h3>
+        <hr class="mx-auto" />
+        <p>Here you can check out our featured products</p>
+      </div>
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+          <img src="assets/imgs/featured1.jpg" class="img-fluid mb-3" alt="" />
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <h5 class="p-name">Sports Shoes</h5>
+          <h4 class="p-price">$199.8</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+          <img src="assets/imgs/featured2.jpg" class="img-fluid mb-3" alt="" />
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <h5 class="p-name">Bags</h5>
+          <h4 class="p-price">$199.8</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+          <img src="assets/imgs/featured3.jpg" class="img-fluid mb-3" alt="" />
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <h5 class="p-name">Sunglasses</h5>
+          <h4 class="p-price">$199.8</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+          <img src="assets/imgs/featured4.jpg" class="img-fluid mb-3" alt="" />
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <h5 class="p-name">Colonges</h5>
+          <h4 class="p-price">$199.8</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </section> -->
+
+  <!--Banner
+    <section id="banner" class="my-5 pb-5">
+      <div class="container">
+        <h4>MID SEASON SALE</h4>
+        <h1>
+          Winter Collection <br />
+          UP to 30% OFF
+        </h1>
+        <button class="text-uppercase">Shop Now</button>
+      </div>
+    </section>-->
+  <br><br>
+  <div class="container">
+    <div class="clearfix">
+      <img
+        src="https://i0.wp.com/thechampatree.in/wp-content/uploads/2020/12/How-online-classes-benefit-us-scaled.jpg?resize=768%2C1151&ssl=1"
+        class="col-md-6 float-md-end mb-3 ms-md-3" alt="..." style="height: 600px;">
+
+      <h4>What will our Platform offer</h4>
+
+      <ul class="list-group">
+        <li class="list-group-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad mollitia assumenda
+          aspernatur repellat? Voluptatibus consequuntur, autem soluta accusantium harum, nobis quisquam dolorum
+          cupiditate ipsam provident minus. Excepturi, quaerat? Illo, exercitationem?</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul>
+      <p>
+        A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a
+        few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+      </p>
+
+      <p>
+        As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with
+        some actual content in here, rather than just this boring placeholder text that goes on and on, but actually
+        conveys no tangible information at. It simply takes up space and should not really be read.
+      </p>
+
+      <p>
+        And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or
+        some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+      </p>
+    </div>
+
+  </div>
+
+  <!--Clothes-->
+  <section id="featured" class="my-5">
+    <div class="container text-center">
+      <h3>Hear what our users say</h3>
+      <hr class="mx-auto" />
+      <p>Checkout the reviews from our clients</p>
+    </div>
+    <div class="row mx-auto container-fluid">
+      <div class="review text-center col-lg-3 col-md-4 col-sm-12">
+        <img src="assets/imgs/clothes1.jpg" class="img-fluid mb-2" alt="" />
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+
+        <!--<h5 class="p-name">Sports Shoes</h5>-->
+
+        <button class="review-box">Hi, My name is Anisha. I have been using this platform for a long time and it is very
+          useful</button>
+      </div>
+
+      <div class="review text-center col-lg-3 col-md-4 col-sm-12">
+        <img src="assets/imgs/clothes1.jpg" class="img-fluid mb-2" alt="" />
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+
+        <!--<h5 class="p-name">Sports Shoes</h5>-->
+
+        <button class="review-box">Hi, My name is Anisha. I have been using this platform for a long time and it is very
+          useful</button>
+      </div>
+
+      <div class="review text-center col-lg-3 col-md-4 col-sm-12">
+        <img src="assets/imgs/clothes1.jpg" class="img-fluid mb-2" alt="" />
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+
+        <!--<h5 class="p-name">Sports Shoes</h5>-->
+
+        <button class="review-box">Hi, My name is Anisha. I have been using this platform for a long time and it is very
+          useful</button>
+      </div>
+
+      <div class="review text-center col-lg-3 col-md-4 col-sm-12">
+        <img src="assets/imgs/clothes1.jpg" class="img-fluid mb-2" alt="" />
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+
+        <!--<h5 class="p-name">Sports Shoes</h5>-->
+
+        <button class="review-box">Hi, My name is Anisha. I have been using this platform for a long time and it is very
+          useful</button>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!--Watches
+    <section id="watches" class="my-5">
+      <div class="container text-center">
+        <h3>Best Watches</h3>
+        <hr class="mx-auto" />
+        <p>Check out our Unique Watches</p>
+      </div>
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+          <img src="assets/imgs/watch1.jpg" class="img-fluid mb-3" alt="" />
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <h5 class="p-name">Sports Shoes</h5>
+          <h4 class="p-price">$199.8</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+          <img src="assets/imgs/watch2.jpg" class="img-fluid mb-3" alt="" />
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <h5 class="p-name">Bags</h5>
+          <h4 class="p-price">$199.8</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+          <img src="assets/imgs/watch3.jpg" class="img-fluid mb-3" alt="" />
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <h5 class="p-name">Sunglasses</h5>
+          <h4 class="p-price">$199.8</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+          <img src="assets/imgs/watch4.jpg" class="img-fluid mb-3" alt="" />
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <h5 class="p-name">Colonges</h5>
+          <h4 class="p-price">$199.8</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </section> -->
+
+  <!--Shoes
+    <section id="shoes" class="">
+      <div class="container text-center">
+        <h3>Shoes</h3>
+        <hr class="mx-auto" />
+        <p>Here you can check out our amazing Shoes</p>
+      </div>
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+          <img src="assets/imgs/shoes1.jpg" class="img-fluid mb-3" alt="" />
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <h5 class="p-name">Sports Shoes</h5>
+          <h4 class="p-price">$199.8</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+          <img src="assets/imgs/shoes2.jpg" class="img-fluid mb-3" alt="" />
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <h5 class="p-name">Bags</h5>
+          <h4 class="p-price">$199.8</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+          <img src="assets/imgs/shoes3.jpg" class="img-fluid mb-3" alt="" />
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <h5 class="p-name">Sunglasses</h5>
+          <h4 class="p-price">$199.8</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+          <img src="assets/imgs/shoes4.jpg" class="img-fluid mb-3" alt="" />
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <h5 class="p-name">Colonges</h5>
+          <h4 class="p-price">$199.8</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </section> -->
+
+  <!--Footer-->
+
+  <footer class="mt-5 py-5">
+    <div class="row container mx-auto pt-5">
+      <div class="footer-one col-lg-3 col-md-6 col-sm-12">
+        <img class="logo" src="assets/imgs/logo.png" alt="logo" />
+        <p class="pt-3">
+          We provide the best products for the most affordable prices
+        </p>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-sm-12">
+        <h5 class="pb-2">Featured</h5>
+        <ul class="text-uppercase">
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Boys</a></li>
+          <li><a href="#">Girls</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Clothes</a></li>
+        </ul>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-sm-12">
+        <h5 class="pb-2">Contact Us</h5>
+        <div>
+          <h6 class="text-uppercase">Address</h6>
+          <p>1234, StreetName, City</p>
+        </div>
+        <div>
+          <h6 class="text-uppercase">Phone No</h6>
+          <p>1234567890</p>
+        </div>
+        <div>
+          <h6 class="text-uppercase">Email</h6>
+          <p>info@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-sm-12">
+        <h5 class="pb-2">Instagram</h5>
+        <div class="row">
+          <img src="" class="img-fluid w-25 h-100 m-2" alt="" />
+          <img src="" class="img-fluid w-25 h-100 m-2" alt="" />
+          <img src="" class="img-fluid w-25 h-100 m-2" alt="" />
+          <img src="" class="img-fluid w-25 h-100 m-2" alt="" />
+          <img src="" class="img-fluid w-25 h-100 m-2" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright mt-5">
+      <div class="row container mx-auto">
+        <div class="col-lg-3 col-md-5 col-sm-12 mb-4">
+          <img src="assets/imgs/payments.jpg" alt="payment" />
+        </div>
+        <div class="col-lg-3 col-md-5 col-sm-12 mb-4 text-nowrap mb-2">
+          <p>E-shop @2022 All Right Reserved</p>
+        </div>
+        <div class="col-lg-3 col-md-5 col-sm-12 mb-4">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
