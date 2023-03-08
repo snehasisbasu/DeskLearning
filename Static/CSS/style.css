@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "poppins", "sans-serif";
+  font-family:'Courier New', Courier, monospace;
 }
 h1 {
   font-size: 2.5rem;
@@ -163,7 +163,7 @@ button:hover {
 .review .review-box {
   background-color: #fb774b;
   transform: translateY(50px);
-  opacity: ;
+  /* opacity: ; */
   transition: 0.3s all;
 }
 
@@ -386,6 +386,7 @@ input:valid ~ label {
   text-decoration: none;
   color: #1d1d1d;
   font-weight: 600;
+}
 .register p a:hover {
   text-decoration: underline;
 }
